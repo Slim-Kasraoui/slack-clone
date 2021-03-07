@@ -3,9 +3,10 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+
+import Header from './components/Header.js'
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/">
-            <h1>Home page is this one !</h1>
+          <Route path="/" exact>
+            <Header/>
           </Route>
         </Switch>
       </>

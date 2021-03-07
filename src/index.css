@@ -1,9 +1,11 @@
 * {
   margin :0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  --slack-color : #3f0f40;
+  --slack-color : #3F0E40;
   overflow: hidden;
 
   margin: 0;
